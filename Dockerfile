@@ -11,4 +11,4 @@ RUN cd /build/Cloudskills-Test/app && go build
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/build/CloudSkills-Test/app/app"]
+ENTRYPOINT [ "/build/CloudSkills-Test/app"]
