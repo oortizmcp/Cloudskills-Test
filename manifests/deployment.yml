@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: cloudskillstest 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloudskillstest
+  template:
+    metadata:
+      labels:
+        app: cloudskillstest 
+    spec:
+      containers:
+        - name: cloudskillstest 
+          image: oointerviewprep.azurecr.io/cloudskillstest
+          ports:
+          - containerPort: 8080
